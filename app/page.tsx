@@ -1,0 +1,33 @@
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <section className="home">
+      <h1>ยินดีต้อนรับสู่ MyNext</h1>
+      <p>
+        เว็บไซต์ตัวอย่างที่สร้างด้วย <strong>Next.js</strong>  
+        โดยไม่ใช้ TailwindCSS — ใช้ CSS ปกติทั้งหมด
+      </p>
+
+      <div className="buttons">
+        <Link href="/about" className="btn-primary">เกี่ยวกับเรา</Link>
+        <Link href="/contact" className="btn-secondary">ติดต่อเรา</Link>
+      </div>
+
+      <div className="features">
+        <div className="card">
+          <h2>⚡ เร็วและทันสมัย</h2>
+          <p>ใช้เทคโนโลยี Next.js เพื่อการโหลดที่รวดเร็วและประสิทธิภาพสูง</p>
+        </div>
+        <div className="card">
+          <h2>🎨 ดีไซน์เรียบง่าย</h2>
+          <p>ใช้ CSS ปกติในการตกแต่งหน้าเว็บให้ดูสะอาดและเข้าใจง่าย</p>
+        </div>
+        <div className="card">
+          <h2>🧩 โครงสร้างชัดเจน</h2>
+          <p>โค้ดจัดระเบียบ เข้าใจง่าย และขยายต่อได้สะดวก</p>
+        </div>
+      </div>
+    </section>
+  );
+}
